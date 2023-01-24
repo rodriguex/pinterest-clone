@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.header_subtitle {
+  color: rgb(194, 139, 0);
+}
+
+.search_wallpaper {
+  background: rgb(255, 253, 146);
+}
+
+.search_text {
+  color: rgb(195, 25, 82);
+}
+
+.search_button {
+  background-color: rgb(195, 25, 82);
+  color: rgb(255, 253, 158);
+}
+
+.search_input {
+  color: rgb(110, 15, 60);
+}
+
+.save_wallpaper {
+  background: rgb(218, 255, 246);
+}
+
+.save_text {
+  color: rgb(0, 107, 108);
+}
+
+.save_button {
+  background: rgb(0, 107, 108);
+  color: rgb(204, 246, 238);
+}
+
+.shop_left_wallpaper {
+  background: url("./assets/shop_wallpaper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shop_wallpaper {
+  background: rgb(255, 226, 235);
+  color: rgb(195, 47, 0);
+}
+
+.shop_button {
+  background: rgb(195, 47, 0);
+  color: rgb(255, 223, 233);
+}
+
+.bottom_backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
