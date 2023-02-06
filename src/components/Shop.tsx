@@ -7,7 +7,7 @@ function Shop() {
     <div className="w-full h-full flex justify-center items-center">
       <div className="shop_left_wallpaper w-1/2 flex justify-center items-center h-full">
         <div className="relative top-[18%] left-[-29%]">
-          <img src={shopInsta} className="w-52" />
+          <img src={shopInsta} className="w-[215px] rounded-2xl" />
           <img
             src={shopAvatar}
             className="absolute bottom-[-2%] left-[-24%] w-24"

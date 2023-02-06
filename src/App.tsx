@@ -8,12 +8,12 @@ import Top from "./components/Top";
 function App() {
   return (
     <>
-      <Header />
-      <Top />
+      {/* <Header /> */}
+      {/* <Top /> */}
       <Search />
-      <Save />
-      <Shop />
-      <Bottom />
+      {/* <Save /> */}
+      {/* <Shop /> */}
+      {/* <Bottom /> */}
     </>
   );
 }

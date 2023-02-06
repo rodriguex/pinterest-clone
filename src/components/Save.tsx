@@ -13,16 +13,16 @@ function Save() {
         </div>
 
         <div className="flex flex-col">
-          <div className="border border-black flex gap-16">
+          <div className="flex gap-16">
             <div className="w-96 h-[420px] bg-gray-200 rounded-[50px] flex justify-center items-center font-bold text-3xl"></div>
             <div className="w-64 h-64 bg-gray-200 rounded-[50px] flex justify-center items-center font-bold text-3xl"></div>
           </div>
 
-          <div className="mr-[15%] mt-[-20%] border border-black self-end w-44 h-44 bg-gray-200 rounded-[50px] flex justify-center items-center font-bold text-3xl"></div>
+          <div className="mr-[15%] mt-[-18%] border self-end w-44 h-44 bg-gray-200 rounded-[50px] flex justify-center items-center font-bold text-3xl"></div>
 
-          <div className="mr-[10%] border border-black flex justify-end gap-8">
+          <div className="mr-[10%] flex justify-end gap-12">
             <div className="w-56 h-56 bg-gray-200 rounded-[50px] flex justify-center items-center font-bold text-3xl"></div>
-            <div className="w-56 h-56 bg-gray-200 rounded-[50px] flex justify-center items-center font-bold text-3xl"></div>
+            <div className="w-56 h-56 mt-[7%] bg-gray-200 rounded-[50px] flex justify-center items-center font-bold text-3xl"></div>
           </div>
         </div>
       </div>
