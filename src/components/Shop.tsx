@@ -1,10 +1,9 @@
-import shopWallpaper from "./../assets/shop_wallpaper.png";
 import shopInsta from "./../assets/shop_insta.png";
 import shopAvatar from "./../assets/shop_avatar.png";
 
 function Shop() {
   return (
-    <div className="w-full h-full flex justify-center items-center">
+    <div id="shop" className="w-full h-full flex justify-center items-center">
       <div className="shop_left_wallpaper w-1/2 flex justify-center items-center h-full">
         <div className="relative top-[18%] left-[-29%]">
           <img src={shopInsta} className="w-[215px] rounded-2xl" />

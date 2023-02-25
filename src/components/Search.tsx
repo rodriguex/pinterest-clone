@@ -5,7 +5,10 @@ import searchFourth from "./../assets/search_fourth.png";
 
 function Search() {
   return (
-    <div className="search_wallpaper w-full h-full flex items-center">
+    <div
+      id="search"
+      className="search_wallpaper w-full h-full flex items-center"
+    >
       <div className="relative w-1/2 flex justify-center items-center">
         <img
           src={searchFirst}

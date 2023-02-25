@@ -1,6 +1,9 @@
 function Save() {
   return (
-    <div className="save_wallpaper w-full h-full flex justify-center items-center">
+    <div
+      id="save"
+      className="save_wallpaper w-full h-full flex justify-center items-center"
+    >
       <div className="flex justify-between w-4/5 items-center">
         <div className="save_text flex flex-col items-center gap-5">
           <h1 className="font-bold text-6xl">Save ideas you like</h1>

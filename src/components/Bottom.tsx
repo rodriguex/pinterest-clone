@@ -1,6 +1,6 @@
 function Bottom() {
   return (
-    <div className="relative w-full h-full flex flex-col">
+    <div id="bottom" className="relative w-full h-full flex flex-col">
       <div className="h-[calc(100%-48px)] flex justify-center items-center gap-3 overflow-y-hidden">
         <div className="mt-[-18%] flex flex-col gap-3">
           <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
