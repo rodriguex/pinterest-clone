@@ -13,67 +13,43 @@ function App() {
     let shop = document.getElementById("shop");
     let bottom = document.getElementById("bottom");
 
-    top?.addEventListener("wheel", (e) => {
-      e.preventDefault();
+    let arrays = [
+      { from: top, prev: null, next: search },
+      { from: search, prev: top, next: save },
+      { from: save, prev: search, next: shop },
+      { from: shop, prev: save, next: bottom },
+      { from: bottom, prev: shop, next: null },
+    ];
 
-      if (e.deltaY > 0) {
-        search?.scrollIntoView({ behavior: "smooth" });
+    arrays.map((array: any) => {
+      if (!array.prev) {
+        array.from.addEventListener("wheel", (e: any) => {
+          e.preventDefault();
+
+          if (e.deltaY > 0) {
+            array.next.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      } else if (!array.next) {
+        array.from.addEventListener("wheel", (e: any) => {
+          e.preventDefault();
+
+          if (e.deltaY < 0) {
+            array.prev.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      } else {
+        array.from.addEventListener("wheel", (e: any) => {
+          e.preventDefault();
+
+          if (e.deltaY < 0) {
+            array.prev.scrollIntoView({ behavior: "smooth" });
+          } else {
+            array.next.scrollIntoView({ behavior: "smooth" });
+          }
+        });
       }
     });
-
-    search?.addEventListener(
-      "wheel",
-      (e) => {
-        e.preventDefault();
-
-        if (e.deltaY < 0) {
-          top?.scrollIntoView({ behavior: "smooth" });
-        } else {
-          save?.scrollIntoView({ behavior: "smooth" });
-        }
-      },
-      { passive: false }
-    );
-
-    save?.addEventListener(
-      "wheel",
-      (e) => {
-        e.preventDefault();
-
-        if (e.deltaY < 0) {
-          search?.scrollIntoView({ behavior: "smooth" });
-        } else {
-          shop?.scrollIntoView({ behavior: "smooth" });
-        }
-      },
-      { passive: false }
-    );
-
-    shop?.addEventListener(
-      "wheel",
-      (e) => {
-        e.preventDefault();
-
-        if (e.deltaY < 0) {
-          save?.scrollIntoView({ behavior: "smooth" });
-        } else {
-          bottom?.scrollIntoView({ behavior: "smooth" });
-        }
-      },
-      { passive: false }
-    );
-
-    bottom?.addEventListener(
-      "wheel",
-      (e) => {
-        e.preventDefault();
-
-        if (e.deltaY < 0) {
-          shop?.scrollIntoView({ behavior: "smooth" });
-        }
-      },
-      { passive: false }
-    );
   }, []);
 
   return (

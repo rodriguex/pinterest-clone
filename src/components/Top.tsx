@@ -1,4 +1,4 @@
-function Top({ wheel }: any) {
+function Top() {
   return (
     <div id="top" className="h-full">
       <div className="p-4 h-20 flex items-center justify-between">
