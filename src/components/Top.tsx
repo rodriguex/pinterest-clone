@@ -1,4 +1,80 @@
+import { useEffect, useState } from "react";
+
 function Top() {
+  const [aaTime, setAaTime] = useState(0);
+
+  useEffect(() => {
+    let thiss = document.querySelectorAll(".this");
+    let that = document.querySelectorAll(".that");
+    let jonson = document.querySelectorAll(".jonson");
+    let rick = document.querySelectorAll(".rick");
+    let morthy = document.querySelectorAll(".morthy");
+    let lili = document.querySelectorAll(".lili");
+    let lolo = document.querySelectorAll(".lolo");
+
+    function aa() {
+      let thissTime = 0;
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          thiss[i].className += " test";
+        }, thissTime);
+        thissTime += 200;
+      }
+
+      let thatTime = 400;
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          that[i].className += " test";
+        }, thatTime);
+        thatTime += 200;
+      }
+
+      let jonsonTime = 800;
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          jonson[i].className += " test";
+        }, jonsonTime);
+        jonsonTime += 200;
+      }
+
+      let rickTime = 1200;
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          rick[i].className += " test";
+        }, rickTime);
+        rickTime += 200;
+      }
+
+      let morthyTime = 1600;
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          morthy[i].className += " test";
+        }, morthyTime);
+        morthyTime += 200;
+      }
+
+      let liliTime = 2000;
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          lili[i].className += " test";
+        }, liliTime);
+        liliTime += 200;
+      }
+
+      let loloTime = 2400;
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          lolo[i].className += " test";
+        }, loloTime);
+        loloTime += 200;
+      }
+    }
+
+    setTimeout(() => {
+      aa();
+    }, 0);
+  });
+
   return (
     <div id="top" className="h-full">
       <div className="p-4 h-20 flex items-center justify-between">
@@ -37,66 +113,66 @@ function Top() {
       </div>
 
       <div className="p-4 h-[calc(100%-80px)] relative flex flex-col items-center overflow-y-hidden">
-        <h1 className="mt-[12%] w-fit flex flex-col text-center gap-5 m-auto text-6xl font-bold">
+        {/* <h1 className="mt-[12%] w-fit flex flex-col text-center gap-5 m-auto text-6xl font-bold">
           Get your next
           <span className="header_subtitle">weeknight dinner idea</span>
-        </h1>
+        </h1> */}
 
         <div className="flex absolute top-[25%] justify-center items-center gap-3">
           <div className="mt-[-18%] flex flex-col gap-3">
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="this bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="this bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="this bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="this bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="this bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
           </div>
 
           <div className="mt-[-7%] flex flex-col gap-3">
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="that bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="that bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="that bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="that bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="that bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
           </div>
 
           <div className="mt-[2%] flex flex-col gap-3">
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="jonson bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="jonson bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="jonson bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="jonson bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="jonson bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
           </div>
 
           <div className="mt-[25%] flex flex-col gap-3">
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="rick bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="rick bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="rick bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="rick bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="rick bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
           </div>
 
           <div className="mt-[2%] flex flex-col gap-3">
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="morthy bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="morthy bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="morthy bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="morthy bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="morthy bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
           </div>
 
           <div className="mt-[-7%] flex flex-col gap-3">
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="lili bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="lili bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="lili bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="lili bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="lili bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
           </div>
 
           <div className="mt-[-18%] flex flex-col gap-3">
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
-            <div className="bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="lolo bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="lolo bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="lolo bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="lolo bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
+            <div className="lolo bg-gray-200 rounded-xl w-56 h-80 flex justify-center items-center font-bold text-xl"></div>
           </div>
         </div>
       </div>
